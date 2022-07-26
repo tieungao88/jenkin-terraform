@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker { 
-            image 'hashicorp/terraform'
+            image 'tieungao1988/terraform'
             alwaysPull true
         }
     }
