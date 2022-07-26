@@ -1,8 +1,8 @@
 pipeline {
     agent {
         docker { 
-        image 'hashicorp/terraform'
-        alwaysPull true
+            image 'hashicorp/terraform'
+            alwaysPull true
         }
     }
     stages {
