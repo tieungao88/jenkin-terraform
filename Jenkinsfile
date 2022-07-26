@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        docker { 
+        image 'hashicorp/terraform'
+        alwaysPull true
+        }
+    }
     stages {
         stage("Terraform checking") {
             steps {
